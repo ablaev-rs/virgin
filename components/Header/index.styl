@@ -1,0 +1,65 @@
+// 1u is a 8px grid unit. 1u === 8px
+$textColor = #ffffff
+
+.root
+  width 100%
+
+.topLinks
+  justify-content space-between
+
+.logoStyle
+  width 120px
+  height 52px
+  +wide()
+    width 320px
+    height 157px
+
+/* NAVIGATION */
+.navigation
+  display none
+  +tablet()
+    display flex
+
+.item
+  margin-left 3u
+
+  &.first
+    margin-left 0
+
+.text
+  text-transform uppercase
+  color $textColor
+  font-weight 500
+  font-size 12px
+
+
+/* USER */
+.user
+  justify-content space-between
+  align-items center
+
+.hello
+  color $textColor
+
+.name
+  color $textColor
+  text-transform uppercase
+
+.avatar
+  margin-left 1u
+
+.avatarStyle
+  width 52px
+  height 52px
+  border-radius 9999px
+
+
+.sloganBlock
+  margin-top 3u
+
+.slogan
+  font-size 5u
+  font-weight 300
+  text-transform uppercase
+  letter-spacing 4px
+  color $textColor
