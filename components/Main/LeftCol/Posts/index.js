@@ -82,17 +82,14 @@ export default observer(function Posts () {
                   Span.numVotes #{value.vote}
                 
               Row.manageIcons
-                Div.closeIcon
-                  TouchableOpacity
-                    Icon(icon=faTimesCircle color='#d3232c' size='s')
+                TouchableOpacity
+                  Icon.closeIcon(icon=faTimesCircle color='#d3232c' size='s')
 
-                Div.heartIcon
-                  TouchableOpacity
-                    Icon(icon=faHeart color='#d3232c' size='s')
+                TouchableOpacity
+                  Icon.heartIcon(icon=faHeart color='#d3232c' size='s')
                 
-                Span.manage
-                  TouchableOpacity
-                    Span Manage
+                TouchableOpacity
+                  Span.manage Manage
                   
             if value.answers.length
               Answers(answers=value.answers)
