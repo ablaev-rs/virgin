@@ -4,7 +4,7 @@ import {
 } from 'startupjs'
 import './index.styl'
 import { Div, Span, Row, H1, Menu } from '@startupjs/ui'
-import { TouchableOpacity, Image } from 'react-native'
+import { Image } from 'react-native'
 import { BASE_URL } from '@env'
 
 export default observer(function Header () {
@@ -17,7 +17,7 @@ export default observer(function Header () {
     Div.root
       Row.topLinks
         Div.logotype
-          TouchableOpacity.btnIcons
+          Div(onPress=()=>{})
             Image.logoStyle(
               source={uri: base + logoUrl}
             )
@@ -32,7 +32,7 @@ export default observer(function Header () {
             Span.hello Hello
             Span.name Niraj
           Div.avatar
-            TouchableOpacity.btnIcons
+            Div(onPress=()=>{})
               Image.avatarStyle(
                 source={uri: base + avatarUrl}
               )

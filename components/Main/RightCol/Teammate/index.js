@@ -42,9 +42,8 @@ export default observer(function Teammate () {
                 Link.eventHeader(to='#')= value.eventHeader
                 Span.place= value.place
                 Span.time= value.time
-              Div.moreIcon
-                TouchableOpacity
-                  Icon(icon=faChevronDown color='#d3232c' size='s')
+              Div(onPress=()=>{})
+                Icon(icon=faChevronDown color='#d3232c' size='s')
 
           Hr.sep(styleName=index === events.length-1 ? 'last' : '')
       Hr.divider

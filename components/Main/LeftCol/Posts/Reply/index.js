@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { TouchableOpacity, Image } from 'react-native'
+import { Image } from 'react-native'
 import { Div, Row, TextInput } from '@startupjs/ui'
 import { BASE_URL } from '@env'
 
@@ -12,7 +12,7 @@ export default observer(function Reply () {
 
   return pug`
     Row.root
-      TouchableOpacity
+      Div(onPress=()=>{})
         Image.avatarStyle(
           source={uri: base + imgUrl}
         )

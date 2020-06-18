@@ -3,7 +3,6 @@ import {
   observer
 } from 'startupjs'
 import './index.styl'
-import { TouchableOpacity } from 'react-native'
 import { Div, Span, H4, Row, Icon, Link } from '@startupjs/ui'
 import { faCheck, faTimesCircle, faHeart } from '@fortawesome/free-solid-svg-icons'
 import Answers from 'components/Main/LeftCol/Posts/Answers'
@@ -76,20 +75,21 @@ export default observer(function Posts () {
 
             Row.postIcons
               Row.voteIcon
-                TouchableOpacity
+                Div(onPress=()=>{})
                   Icon(icon=faCheck color='#d3232c' size='s')
-                Span.vote Vote: 
-                  Span.numVotes #{value.vote}
+                Div(onPress=()=>{} pushed='xs')
+                  Span.action Vote: 
+                Span.numVotes #{value.vote}
                 
               Row.manageIcons
-                TouchableOpacity
-                  Icon.closeIcon(icon=faTimesCircle color='#d3232c' size='s')
+                Div(onPress=()=>{})
+                  Icon(icon=faTimesCircle color='#d3232c' size='s')
 
-                TouchableOpacity
-                  Icon.heartIcon(icon=faHeart color='#d3232c' size='s')
+                Div(onPress=()=>{} pushed='xs')
+                  Icon(icon=faHeart color='#d3232c' size='s')
                 
-                TouchableOpacity
-                  Span.manage Manage
+                Div(onPress=()=>{} pushed='xs')
+                  Span.action Manage
                   
             if value.answers.length
               Answers(answers=value.answers)

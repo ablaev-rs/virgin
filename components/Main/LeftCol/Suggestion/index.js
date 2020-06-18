@@ -3,7 +3,6 @@ import {
   observer
 } from 'startupjs'
 import './index.styl'
-import { TouchableOpacity } from 'react-native'
 import { Div, Span, H2, H3, TextInput, Row, Link } from '@startupjs/ui'
 
 export default observer(function Suggestion () {
@@ -34,7 +33,7 @@ export default observer(function Suggestion () {
         Div
           Span.additionalText send a private suggestion email to us:
           Link.mail(to='#') culture@virginhotels.com
-        TouchableOpacity.postBtn
+        Div.postBtn(onPress=()=>{})
           Span Post
   `
 })

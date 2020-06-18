@@ -1,7 +1,7 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { TouchableOpacity, Image } from 'react-native'
+import { Image } from 'react-native'
 import { Div, Span, Row, Hr, Link } from '@startupjs/ui'
 import { BASE_URL } from '@env'
 
@@ -37,7 +37,7 @@ export default observer(function HotelEvents () {
       Div.posts
         each value, index in events
           Row.post(key = index styleName=index === 0 ? 'first' : '')
-            TouchableOpacity
+            Div(onPress=()=>{})
               Image.avatarStyle(
                 source={uri: base + value.imgUrl}
               )
