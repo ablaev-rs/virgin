@@ -11,8 +11,7 @@ export default observer(function PHome () {
   const bg = base + '/img/background.png'
   return pug`
     ScrollView.root
-      Content.maxWidth
-        ImageBackground.bgSize(source = bg)
-          EntryPoint
+      ImageBackground.bgSize(source = bg)
+        EntryPoint
   `
 })
