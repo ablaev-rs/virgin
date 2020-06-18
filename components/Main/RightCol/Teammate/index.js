@@ -1,7 +1,6 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { TouchableOpacity } from 'react-native'
 import { Div, Span, Row, Icon, Hr, Link } from '@startupjs/ui'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 

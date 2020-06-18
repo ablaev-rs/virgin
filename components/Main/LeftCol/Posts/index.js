@@ -5,8 +5,8 @@ import {
 import './index.styl'
 import { Div, Span, H4, Row, Icon, Link } from '@startupjs/ui'
 import { faCheck, faTimesCircle, faHeart } from '@fortawesome/free-solid-svg-icons'
-import Answers from 'components/Main/LeftCol/Posts/Answers'
-import Reply from 'components/Main/LeftCol/Posts/Reply'
+import Answers from './Answers'
+import Reply from './Reply'
 
 export default observer(function Posts () {
   const posts = [

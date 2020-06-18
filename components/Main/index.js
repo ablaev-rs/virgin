@@ -4,8 +4,8 @@ import {
 } from 'startupjs'
 import './index.styl'
 import { Div } from '@startupjs/ui'
-import LeftCol from 'components/Main/LeftCol'
-import RightCol from 'components/Main/RightCol'
+import LeftCol from './LeftCol'
+import RightCol from './RightCol'
 
 export default observer(function Main () {
   return pug`
