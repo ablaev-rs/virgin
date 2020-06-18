@@ -66,7 +66,7 @@ export default observer(function Posts () {
       each value, index in posts
         Row.post(key = index styleName=index === 0 ? 'first' : '')
           Div.counterBlock
-            Span.couter= value.counter
+            Span.counter= value.counter
           Div.aboutBlock
             H4.h4= value.theme
             Link.author(to='#')= value.author
