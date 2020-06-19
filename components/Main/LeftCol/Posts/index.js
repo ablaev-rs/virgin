@@ -85,7 +85,7 @@ export default observer(function Posts () {
                 Div(onPress=()=>{})
                   Icon(icon=faTimesCircle color='#d3232c' size='s')
 
-                Div(onPress=()=>{} pushed='xs')
+                Div(onPress=()=>{} pushed='s')
                   Icon(icon=faHeart color='#d3232c' size='s')
                 
                 Div(onPress=()=>{} pushed='xs')
