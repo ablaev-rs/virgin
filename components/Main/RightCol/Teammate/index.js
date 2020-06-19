@@ -8,7 +8,7 @@ export default observer(function Teammate () {
   const events = [
     {
       date: ['tue', 'mar', 17],
-      eventHeader: 'St Patrick Day Celebration',
+      eventHeader: 'St Patrick Day CelebrationSt Patrick Day CelebrationSt Patrick Day CelebrationSt Patrick Day Celebration',
       place: 'Fdr',
       time: '11:00 - 1:00p'
     },
