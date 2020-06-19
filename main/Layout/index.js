@@ -57,6 +57,6 @@ export default observer(function ({ children }) {
           H1.logo
             Span.logoText(size='xl')= APP_NAME
 
-        Span.body= children
+        Div.body= children
   `
 })
