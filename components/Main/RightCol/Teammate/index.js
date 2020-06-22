@@ -8,7 +8,7 @@ export default observer(function Teammate () {
   const events = [
     {
       date: ['tue', 'mar', 17],
-      eventHeader: 'St Patrick Day CelebrationSt Patrick Day CelebrationSt Patrick Day CelebrationSt Patrick Day Celebration',
+      eventHeader: 'St Patrick Day Celebration',
       place: 'Fdr',
       time: '11:00 - 1:00p'
     },
@@ -41,7 +41,7 @@ export default observer(function Teammate () {
                 Link.eventHeader(to='#')= value.eventHeader
                 Span.place= value.place
                 Span.time= value.time
-              Div(onPress=()=>{})
+              Div.more(onPress=()=>{})
                 Icon(icon=faChevronDown color='#d3232c' size='s')
 
           Hr.sep(styleName=index === events.length-1 ? 'last' : '')
