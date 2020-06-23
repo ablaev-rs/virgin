@@ -19,7 +19,7 @@ export default observer(function ({ children }) {
     '/img/instagram.png',
     '/img/whatsapp.png'
   ]
-  const navigation = ['Valentines', 'V❤Peeps', 'V❤Prep', 'Culture', 'Tribe', 'Recources']
+  const navigation = ['Valentines', 'V ❤ Peeps', 'V ❤ Prep', 'Culture', 'Tribe', 'Recources']
 
   function renderSidebar () {
     return pug`
