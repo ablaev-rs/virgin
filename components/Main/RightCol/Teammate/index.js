@@ -44,8 +44,7 @@ export default observer(function Teammate () {
               Div.more(onPress=()=>{})
                 Icon(icon=faChevronDown color='#d3232c' size='s')
 
-          Hr.sep(styleName=index === events.length-1 ? 'last' : '')
-      Hr.divider
+          Hr.sep
 
 
   `

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
 import { Image } from 'react-native'
-import { Div, Row, TextInput } from '@startupjs/ui'
+import { Div, Row, TextInput, Avatar } from '@startupjs/ui'
 import { BASE_URL } from '@env'
 
 export default observer(function Reply () {
@@ -13,9 +13,7 @@ export default observer(function Reply () {
   return pug`
     Row.root
       Div(onPress=()=>{})
-        Image.avatarStyle(
-          source={uri: base + imgUrl}
-        )
+        Avatar(src=imgUrl size='s')
       Div.aboutBlock
         TextInput(
           size='m' 

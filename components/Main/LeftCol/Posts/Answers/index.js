@@ -1,22 +1,17 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { Image } from 'react-native'
-import { Div, Span, Row, Icon, Link } from '@startupjs/ui'
-import { BASE_URL } from '@env'
+import { Div, Span, Row, Icon, Link, Avatar } from '@startupjs/ui'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 
 export default observer(function Answers ({ answers }) {
-  const base = BASE_URL
 
   return pug`
     Div.root
       each value, index in answers
         Row.post(key = index styleName=index === 0 ? 'first' : '')
           Div(onPress=()=>{})
-            Image.avatarStyle(
-              source={uri: base + value.imgUrl}
-            )
+            Avatar(src=value.imgUrl size='s')  
           Row.aboutBlock
             Div.postInfo
               Link.author(to='#')= value.author
@@ -26,8 +21,6 @@ export default observer(function Answers ({ answers }) {
             Div.closeIcon
               Div(onPress=()=>{})
                 Icon(icon=faTimesCircle color='#d3232c' size='s')
-
-
 
   `
 })

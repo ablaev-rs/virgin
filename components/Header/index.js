@@ -3,7 +3,7 @@ import {
   observer
 } from 'startupjs'
 import './index.styl'
-import { Div, Span, Row, H1, Menu } from '@startupjs/ui'
+import { Div, Span, Row, H1, Menu, Avatar } from '@startupjs/ui'
 import { Image } from 'react-native'
 import { BASE_URL } from '@env'
 
@@ -33,9 +33,7 @@ export default observer(function Header () {
             Span.name Niraj
           Div.avatar
             Div(onPress=()=>{})
-              Image.avatarStyle(
-                source={uri: base + avatarUrl}
-              )
+              Avatar(src=avatarUrl size='xl')
       
       Row.sloganBlock
         H1.slogan Bare It!
