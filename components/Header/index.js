@@ -16,11 +16,11 @@ export default observer(function Header () {
   return pug`
     Div.root
       Row.topLinks
-        Div.logotype
-          Div(onPress=()=>{})
-            Image.logoStyle(
-              source={uri: base + logoUrl}
-            )
+
+        Div(onPress=()=>{})
+          Image.logoStyle(
+            source={uri: base + logoUrl}
+          )
           
         Menu.navigation(variant='horizontal')
           each val, index in navigation
@@ -32,8 +32,7 @@ export default observer(function Header () {
             Span.hello Hello
             Span.name Niraj
           Div.avatar
-            Div(onPress=()=>{})
-              Avatar(src=avatarUrl size='xl')
+            Avatar.avatarStyle(src=avatarUrl onPress=()=>{})
       
       Row.sloganBlock
         H1.slogan Bare It!
