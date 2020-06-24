@@ -11,7 +11,7 @@ export default observer(function Sections () {
     Div.root
       Menu.navigation(variant='horizontal')
         each val, index in navigation
-          Menu.Item(key = index styleName=index === 0 ? 'first' : '' onPress=()=>{})
+          Menu.Item.menuBlock(key = index styleName=index === 0 ? 'first' : '' onPress=()=>{})
             Span.item= val
           Icon.faCaretUp(icon=faCaretUp color='#fff' size='s')
 
