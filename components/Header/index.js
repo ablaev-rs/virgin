@@ -32,7 +32,7 @@ export default observer(function Header () {
             Span.hello Hello
             Span.name Niraj
           Div.avatar
-            Avatar.avatarStyle(src=avatarUrl onPress=()=>{})
+            Avatar.avatarStyle(src=base+avatarUrl onPress=()=>{})
       
       Row.sloganBlock
         H1.slogan Bare It!

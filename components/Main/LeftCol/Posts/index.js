@@ -92,7 +92,7 @@ export default observer(function Posts () {
                   Span.action Manage
                   
                   
-            Div.answerBlock      
+            Div.answerBlock
               if value.answers.length
                 Answers(answers=value.answers)
               Reply

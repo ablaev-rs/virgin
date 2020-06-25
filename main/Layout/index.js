@@ -13,6 +13,7 @@ export default observer(function ({ children }) {
   const [opened, $opened] = useValue(false)
   const base = BASE_URL
   const logoUrl = '/img/main-logo-white.png'
+  const bgUrl = '/img/background.png'
   const icons = [
     '/img/twitter.png',
     '/img/facebook.png',
@@ -20,7 +21,6 @@ export default observer(function ({ children }) {
     '/img/whatsapp.png'
   ]
   const navigation = ['Valentines', 'V ❤ Peeps', 'V ❤ Prep', 'Culture', 'Tribe', 'Recources']
-  const bg = base + '/img/background.png'
 
   function renderSidebar () {
     return pug`
@@ -42,7 +42,6 @@ export default observer(function ({ children }) {
                 Image.image(
                   source={uri: base + url}
                 )
-          
     `
   }
 
@@ -59,9 +58,10 @@ export default observer(function ({ children }) {
             Span.logoText(size='xl')= APP_NAME
 
         ScrollView.body
-          ImageBackground.bgSize(source = bg resizeMode='cover')
+          ImageBackground.bgSize(source=base+bgUrl resizeMode='cover')
           Div.pageWrapper
             Div= children
+
   
   `
 })

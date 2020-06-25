@@ -11,11 +11,10 @@ export default observer(function HotelEvents () {
 
   return pug`
     Div.root
-      Div.wrapper
-        Image.slogan(
-          source={uri: base + url}
-        )
-        Span.text #mlsh
+      Image.slogan(
+        source={uri: base + url}
+      )
+      Span.text #mlsh
 
 
 
