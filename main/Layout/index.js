@@ -4,7 +4,7 @@ import './index.styl'
 import { Row, Div, Layout, SmartSidebar, Menu, Button, H1, Span } from '@startupjs/ui'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { displayName } from '../../app.json'
-import { TouchableOpacity, Image } from 'react-native'
+import { TouchableOpacity, Image, ImageBackground } from 'react-native'
 import { BASE_URL } from '@env'
 
 const APP_NAME = displayName.charAt(0).toUpperCase() + displayName.slice(1)
@@ -20,6 +20,7 @@ export default observer(function ({ children }) {
     '/img/whatsapp.png'
   ]
   const navigation = ['Valentines', 'V ❤ Peeps', 'V ❤ Prep', 'Culture', 'Tribe', 'Recources']
+  const bg = base + '/img/background.png'
 
   function renderSidebar () {
     return pug`
@@ -57,6 +58,9 @@ export default observer(function ({ children }) {
           H1.logo
             Span.logoText(size='xl')= APP_NAME
 
+        
         Div.body= children
+        
+           
   `
 })

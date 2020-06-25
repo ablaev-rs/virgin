@@ -10,7 +10,7 @@ import Main from 'components/Main'
 export default observer(function EntryPoint () {
   return pug`
     Div.root
-      Content(width='wide')
+      Content.template(width='wide')
         Header
         Main
   `
