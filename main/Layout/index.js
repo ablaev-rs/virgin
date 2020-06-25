@@ -4,7 +4,7 @@ import './index.styl'
 import { Row, Div, Layout, SmartSidebar, Menu, Button, H1, Span } from '@startupjs/ui'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { displayName } from '../../app.json'
-import { TouchableOpacity, Image, ImageBackground } from 'react-native'
+import { TouchableOpacity, Image, ImageBackground, ScrollView } from 'react-native'
 import { BASE_URL } from '@env'
 
 const APP_NAME = displayName.charAt(0).toUpperCase() + displayName.slice(1)
@@ -58,9 +58,10 @@ export default observer(function ({ children }) {
           H1.logo
             Span.logoText(size='xl')= APP_NAME
 
-        
-        Div.body= children
-        
-           
+        ScrollView.body
+          ImageBackground.bgSize(source = bg resizeMode='cover')
+          Div.pageWrapper
+            Div= children
+  
   `
 })
