@@ -91,10 +91,11 @@ export default observer(function Posts () {
                 Div(onPress=()=>{} pushed='xs')
                   Span.action Manage
                   
-            if value.answers.length
-              Div.answerBlock
+                  
+            Div.answerBlock      
+              if value.answers.length
                 Answers(answers=value.answers)
-            Reply
+              Reply
 
   `
 })

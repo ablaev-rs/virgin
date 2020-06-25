@@ -11,7 +11,7 @@ export default observer(function Header () {
   const base = BASE_URL
   const logoUrl = '/img/main-logo-white.png'
   const avatarUrl = '/img/avatar.jpeg'
-  const navigation = ['Valentines', 'V❤Peeps', 'V❤prep', 'Bare It', 'Culture', 'Tribe', 'Resources', 'V Well']
+  const navigation = ['Valentines', 'V ❤ Peeps', 'V ❤ prep', 'Bare It', 'Culture', 'Tribe', 'Resources', 'V Well']
 
   return pug`
     Div.root
