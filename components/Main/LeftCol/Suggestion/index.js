@@ -30,7 +30,7 @@ export default observer(function Suggestion () {
       )
 
       Row.suggContact
-        Div
+        Div.email
           Span.additionalText send a private suggestion email to us:
           Link.mail(to='#') culture@virginhotels.com
         Button.postBtn(

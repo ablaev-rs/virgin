@@ -10,7 +10,7 @@ import RightCol from './RightCol'
 export default observer(function Main () {
   return pug`
     Div.root
-      //LeftCol
+      LeftCol
       RightCol
   `
 })
