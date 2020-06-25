@@ -15,9 +15,8 @@ export default observer(function HotelEvents () {
         Div(onPress=()=>{})
           Icon(icon=faMap color='#d3232c' size='l') 
         Link.link(to='/') Culture map
-      Div.block
-        Div(onPress=()=>{})
-          Icon(icon=faCommentAlt color='#d3232c' size='l') 
+      Div.block(onPress=()=>{})
+        Icon(icon=faCommentAlt color='#d3232c' size='l') 
         Link.link(to='/') Send feedback
 
   `

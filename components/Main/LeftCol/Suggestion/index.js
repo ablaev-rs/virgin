@@ -3,7 +3,7 @@ import {
   observer
 } from 'startupjs'
 import './index.styl'
-import { Div, Span, H2, H3, TextInput, Row, Link } from '@startupjs/ui'
+import { Div, Span, H2, H3, TextInput, Row, Link, Button } from '@startupjs/ui'
 
 export default observer(function Suggestion () {
   const [title, setTitle] = useState()
@@ -33,7 +33,13 @@ export default observer(function Suggestion () {
         Div
           Span.additionalText send a private suggestion email to us:
           Link.mail(to='#') culture@virginhotels.com
-        Div.postBtn(onPress=()=>{})
-          Span Post
+        Button.postBtn(
+          children='Post' 
+          textColor='#888' 
+          size='x' 
+          shape='squared'
+          onPress=()=>{}
+        )
+
   `
 })
