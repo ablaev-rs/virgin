@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { Image } from 'react-native'
 import { Div, Row, TextInput, Avatar } from '@startupjs/ui'
 import { BASE_URL } from '@env'
 
@@ -13,9 +12,9 @@ export default observer(function Reply () {
   return pug`
     Row.root
       Div(onPress=()=>{})
-        Avatar(src=imgUrl size='s')
+        Avatar(src=base+imgUrl size='s')
       Div.aboutBlock
-        TextInput(
+        TextInput.input(
           size='m' 
           placeholder='Reply to this suggestion'
           onChangeText=setReply

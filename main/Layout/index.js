@@ -14,6 +14,7 @@ export default observer(function ({ children }) {
   const base = BASE_URL
   const logoUrl = '/img/main-logo-white.png'
   const bgUrl = '/img/background.png'
+  const bgImg = base + bgUrl
   const icons = [
     '/img/twitter.png',
     '/img/facebook.png',
@@ -25,11 +26,10 @@ export default observer(function ({ children }) {
   function renderSidebar () {
     return pug`
       Div.root
-        Row.logotype
-          TouchableOpacity.btnIcons
-            Image.logoStyle(
-              source={uri: base + logoUrl}
-            )
+        TouchableOpacity.logotype
+          Image.logoStyle(
+            source={uri: base + logoUrl}
+          )
         Menu.sidebar
           each value, index in navigation
             Menu.Item.menuItem(key = index  url='/' onPress=()=>{})
@@ -38,10 +38,9 @@ export default observer(function ({ children }) {
         Row.social
           each url, index in icons
             TouchableOpacity.btnSocial(key = index styleName=index === 0 ? 'first' : '')
-              Div.imageBorder
-                Image.image(
-                  source={uri: base + url}
-                )
+              Image.image(
+                source={uri: base + url}
+              )
     `
   }
 
@@ -58,7 +57,7 @@ export default observer(function ({ children }) {
             Span.logoText(size='xl')= APP_NAME
 
         ScrollView.body
-          ImageBackground.bgSize(source=base+bgUrl resizeMode='cover')
+          ImageBackground.bgSize(source=bgImg resizeMode='cover')
           Div.pageWrapper
             Div= children
 
