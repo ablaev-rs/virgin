@@ -1,6 +1,15 @@
 // 1u is a 8px grid unit. 1u === 8px
-
+$textColor = #ffffff
 .root
+  margin-top 3u
+  +tablet()
+    margin-top 4u
+  +desktop()
+    margin-top 5u
+  +wide()
+    margin-top 7u
+
+.columns
   margin-top 4u
   +tablet()
     margin-top 5u
@@ -8,4 +17,14 @@
     margin-top 7u
     flex-direction row
     
+.slogan
+  font-size 5u
+  font-weight 300
+  text-transform uppercase
+  letter-spacing 4px
+  color $textColor
+  +desktop()
+    font-size 6u
+  +wide()
+    font-size 7u
 
