@@ -1,8 +1,10 @@
 // 1u is a 8px grid unit. 1u === 8px
 $redText = #d3232c
+
 .navigation
   background #eee
   padding 2u 0u
+
   +desktop()
     padding 2u
   +wide()
@@ -11,6 +13,9 @@ $redText = #d3232c
 .menuBlock
   padding 0u 2u
   height 4u
+  +native()
+    flex 1
+    padding 0u
 
 .item
   text-transform uppercase
@@ -19,6 +24,10 @@ $redText = #d3232c
   font-size 1.4u
   line-height 2u
   text-decoration none
+  +native()
+    font-size 1.2u
+    text-align center
+    
   +tablet()
     font-size 1.5u
   +desktop()
@@ -26,11 +35,17 @@ $redText = #d3232c
   +wide()
     font-size 1.8u
 
+  
+
 .faCaretUp 
   position absolute
   top 56px
   left 18px
+  +native()
+    left 30px
+
   +desktop()
-    left 27px
-  +wide()
     left 35px
+  +wide()
+    left 42px
+  

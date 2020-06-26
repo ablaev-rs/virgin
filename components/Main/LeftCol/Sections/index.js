@@ -15,5 +15,6 @@ export default observer(function Sections () {
             Span.item= val
           Icon.faCaretUp(icon=faCaretUp color='#fff' size='s')
 
+          
   `
 })
