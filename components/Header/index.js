@@ -3,7 +3,7 @@ import {
   observer
 } from 'startupjs'
 import './index.styl'
-import { Div, Span, Row, H1, Menu, Avatar } from '@startupjs/ui'
+import { Div, Span, Row, Menu, Avatar } from '@startupjs/ui'
 import { Image } from 'react-native'
 import { BASE_URL } from '@env'
 

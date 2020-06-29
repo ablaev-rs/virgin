@@ -3,7 +3,7 @@ import {
   observer
 } from 'startupjs'
 import './index.styl'
-import { Div, Span, H4, Row, Icon, Link } from '@startupjs/ui'
+import { Div, Span, Row, Icon, Link } from '@startupjs/ui'
 import { faCheck, faTimesCircle, faHeart } from '@fortawesome/free-solid-svg-icons'
 import Answers from './Answers'
 import Reply from './Reply'
@@ -68,7 +68,7 @@ export default observer(function Posts () {
           Div.counterBlock
             Span.counter= value.counter
           Div.aboutBlock
-            H4.h4= value.theme
+            Span.title= value.theme
             Link.author(to='#')= value.author
               Span.date over #{value.date} years ago
             Span.text= value.post

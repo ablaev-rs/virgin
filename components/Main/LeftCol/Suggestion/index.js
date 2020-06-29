@@ -3,7 +3,7 @@ import {
   observer
 } from 'startupjs'
 import './index.styl'
-import { Div, Span, H2, H3, TextInput, Row, Link, Button } from '@startupjs/ui'
+import { Div, Span, TextInput, Row, Link, Button } from '@startupjs/ui'
 
 export default observer(function Suggestion () {
   const [title, setTitle] = useState()
@@ -11,8 +11,8 @@ export default observer(function Suggestion () {
 
   return pug`
     Div.root
-      H2.h2 Add a suggestion
-      H3.h3 We love to hear new ideas on how to be even more awesome
+      Span.title Add a suggestion
+      Span.subtitle We love to hear new ideas on how to be even more awesome
 
       TextInput.title(
         size='m'
