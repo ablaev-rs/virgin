@@ -38,7 +38,12 @@ export default observer(function ({ children }) {
 
         Row.social
           each url, index in icons
-            TouchableOpacity.btnSocial(key = index styleName=index === 0 ? 'first' : '')
+            Button.btnSocial(
+              color='#ffffff'
+              shape='circle'
+              variant='flat'
+              onPress=()=>{}
+              key = index styleName=index === 0 ? 'first' : '')
               Image.image(
                 source={uri: base + url}
               )
