@@ -34,12 +34,11 @@ export default observer(function Suggestion () {
           Span.additionalText send a private suggestion email to us:
           Link.mail(to='#') culture@virginhotels.com
         Button.postBtn(
-          children='Post' 
           textColor='#888' 
-          size='x' 
+          size='m' 
           shape='squared'
           onPress=()=>{}
-        )
+        ) POST
 
   `
 })

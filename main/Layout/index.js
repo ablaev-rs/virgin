@@ -53,7 +53,7 @@ export default observer(function ({ children }) {
         renderContent=renderSidebar
       )
         Row.menu
-          Button(style={color: '#fff'} icon=faBars onPress=() => $opened.set(!opened))
+          Button(color='#ffffff' icon=faBars onPress=() => $opened.set(!opened))
           H1.logo
             Span.logoText(size='xl')= APP_NAME
 

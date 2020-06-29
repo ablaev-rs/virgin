@@ -10,8 +10,8 @@ export default observer(function Reply () {
   const [reply, setReply] = useState()
 
   return pug`
-    Row.root
-      Div(onPress=()=>{})
+    Div.root
+      Div.avatar(onPress=()=>{})
         Avatar(src=base+imgUrl size='s')
       Div.aboutBlock
         TextInput.input(
