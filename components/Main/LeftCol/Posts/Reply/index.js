@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { Div, Row, TextInput, Avatar } from '@startupjs/ui'
+import { Div, Row, TextInput, Avatar, Input } from '@startupjs/ui'
 import { BASE_URL } from '@env'
 
 export default observer(function Reply () {
@@ -16,10 +16,11 @@ export default observer(function Reply () {
       Div.aboutBlock
         TextInput.input(
           size='m' 
-          placeholder='Reply to this suggestion'
-          onChangeText=setReply
+          placeholder='Reply to this suggestion' 
+          onChangeText=setReply 
           value=reply
         )
+
 
   `
 })
