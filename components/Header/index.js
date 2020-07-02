@@ -24,7 +24,7 @@ export default observer(function Header () {
           
         Menu.navigation(variant='horizontal')
           each val, index in navigation
-            Menu.Item.item(key = index styleName=index === 0 ? 'first' : '' onPress=()=>{})
+            Menu.Item(key = index styleName=index === 0 ? 'first' : '' onPress=()=>{})
               Span.text= val
 
         Row.user

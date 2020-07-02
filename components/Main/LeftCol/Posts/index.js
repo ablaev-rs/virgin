@@ -95,7 +95,7 @@ export default observer(function Posts () {
             Div.answerBlock
               if value.answers.length
                 Answers(answers=value.answers)
-              Reply
+              //Reply
 
   `
 })
