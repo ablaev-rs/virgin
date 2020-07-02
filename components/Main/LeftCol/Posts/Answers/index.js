@@ -13,7 +13,7 @@ export default observer(function Answers ({ answers }) {
       each value, index in answers
         Row.post(key = index styleName=index === 0 ? 'first' : '')
           Div(onPress=()=>{})
-            Avatar(src=base+value.imgUrl size='m')  
+            Avatar(src=base+value.imgUrl size='s')  
           Row.aboutBlock
             Div.postInfo
               Link.author(to='#')= value.author

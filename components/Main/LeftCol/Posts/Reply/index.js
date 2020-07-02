@@ -12,7 +12,7 @@ export default observer(function Reply () {
   return pug`
     Div.root
       Div.avatar(onPress=()=>{})
-        Avatar(src=base+imgUrl size='m')
+        Avatar(src=base+imgUrl size='s')
       Div.aboutBlock
         TextInput.input(
           size='m' 
