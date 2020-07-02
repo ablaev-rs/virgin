@@ -14,7 +14,7 @@ export default observer(function Suggestion () {
       Span.title Add a suggestion
       Span.subtitle We love to hear new ideas on how to be even more awesome
 
-      TextInput.title(
+      TextInput.titleInput(
         size='m'
         placeholder='Title of suggestion'
         onChangeText=setTitle
