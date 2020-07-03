@@ -14,5 +14,6 @@ export default observer(function Main () {
       Div.columns
         LeftCol
         RightCol
+      
   `
 })

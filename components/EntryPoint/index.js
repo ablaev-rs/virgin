@@ -13,5 +13,6 @@ export default observer(function EntryPoint () {
       Content.template(width='wide')
         Header
         Main
+
   `
 })

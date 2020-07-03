@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { Div, Row, TextInput, Avatar, Input } from '@startupjs/ui'
+import { Div, TextInput, Avatar } from '@startupjs/ui'
 import { BASE_URL } from '@env'
 
 export default observer(function Reply () {
