@@ -1,0 +1,100 @@
+// 1u is a 8px grid unit. 1u === 8px
+$redText = #d3232c
+
+.root
+  background #ffffff
+  padding 2u
+  +desktop()
+    padding 2u 3u
+  +wide()
+    padding 3u 4u
+
+.post
+  align-items flex-start
+  margin-top 3u
+
+  &.first
+    margin-top 0u
+
+.counterBlock
+  border-radius 9999px
+  border-width 1px
+  border-color: #000000
+
+.counter
+  font-size 2.5u
+  line-height 3u
+  font-weight 300
+  padding 2u
+  +desktop()
+    font-size 3u
+    line-height 3u
+
+.aboutBlock
+  margin-left 2u
+  flex 1
+
+.title
+  font-size 2u
+  text-transform uppercase
+  letter-spacing 3px
+  +desktop()
+    font-size 2.5u
+    line-height 3u
+
+.author
+  color $redText
+  font-size 1.5u
+  line-height 2u
+  text-decoration none
+  margin-top 1u
+  +desktop()
+    font-size 1.8u
+    line-height 2u
+
+.date
+  font-size 1.4u
+  line-height 2u
+  margin-left 1u
+  +desktop()
+    font-size 1.7u
+    line-height 2u
+
+.text
+  color #666666
+  text-transform none
+  font-size 1.8u
+  margin-top 1u
+  +desktop()
+    font-size 2u
+    line-height 3u
+
+.postIcons
+  margin-top 1u
+  justify-content space-between
+  +desktop()
+    margin-top 2u
+
+.voteIcon
+  align-items center
+
+.action
+  text-transform uppercase
+  font-size 1.5u
+  line-height 2u
+  color $redText
+  font-weight 500
+  +desktop()
+    font-size 1.8u
+    line-height 2u
+
+.numVotes
+  color #999
+
+.manageIcons
+  align-items center
+
+.answerBlock
+  margin-top 1u
+  +desktop()
+    margin-top 2u

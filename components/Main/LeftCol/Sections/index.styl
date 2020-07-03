@@ -1,0 +1,48 @@
+// 1u is a 8px grid unit. 1u === 8px
+$redText = #d3232c
+
+.navigation
+  background #eee
+  padding 2u 0u
+
+  +desktop()
+    padding 2u
+  +wide()
+    padding 2u 3u
+
+.menuBlock
+  padding 0u 2u
+  height 4u
+  +native()
+    flex 1
+    padding 0u
+
+.item
+  text-transform uppercase
+  color $redText
+  font-weight 300
+  font-size 1.2u
+  line-height 2u
+  text-decoration none
+  +tablet()
+    font-size 1.5u
+  +desktop()
+    font-size 1.6u
+  +wide()
+    font-size 1.8u
+
+  +native()
+    text-align center
+
+.faCaretUp 
+  position absolute
+  top 56px
+  left 18px
+  +native()
+    left 30px
+
+  +desktop()
+    left 35px
+  +wide()
+    left 42px
+  

@@ -1,11 +1,8 @@
 $menuHeight = 6u
 $logoColor = #FCB69D
 
-.sidebar
-  padding-top 2u
-
 .menu
-  background-color rgba(black, 0.02)
+  background-color #000000
   height $menuHeight
   z-index 1
   align-items center
@@ -16,7 +13,62 @@ $logoColor = #FCB69D
 .logo
   margin-left 2u
   &Text
-    color $UI.colors.secondaryText
+    color #fff
 
-.body
-  flex 1
+.bgSize
+  width 100%
+  height 850px
+
+.pageWrapper
+  position absolute
+  left 0
+  right 0
+  top 0
+  +native()
+    position relative
+    margin-top -850px
+
+
+  
+/* SIDEBAR INFO */
+.root
+  padding-top 2u
+
+.sidebar
+  padding-top 6u
+
+.logotype
+  margin 0 auto
+
+.logoStyle
+  width 150px
+  height 73px
+
+.menuItem
+  height 6u
+
+.item
+  color #ffffff
+  font-size 2u
+  text-transform uppercase
+
+/* social bittons */
+.social
+  margin-top 8u
+  margin-left 2u
+
+.btnSocial
+  border-width 1px
+  border-color #fff 
+  border-radius 9999px
+  align-items center
+  justify-content center
+  margin-left 2u
+  padding 1u
+  &.first
+    margin-left 0u
+
+.image
+  width 2u
+  height 2u
+
